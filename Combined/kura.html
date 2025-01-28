@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Oma CSS-tiedosto -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+        <title>KuraSushi - Aasialainen ravintola</title>
+    </head>
+  
+    <body>
+        
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <!-- KuraSushi Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" width="100" height="100" alt="KuraSushi Logo">
+                </a>
+                <!-- Navbar nappi -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="#varaa-poyta"> Varaus </a>
+                        <a class="nav-link" href="#"> Hinnasto </a>
+                        <a class="nav-link" href="#meista"> Meistä </a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                        <!-- Kielen vaihto -->
+                        <a href="#">
+                            <img src="img/sve.png" width="35" height="35" alt="På svenska">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image">
+        </div>
+        
+        <!-- MEISTÄ(ABOUT) -->
+        <div class="container py-4" id="meista">
+            <div class="row gx-5">
+                <div class="col-7">
+                    <h1>Meistä</h1>
+                    <p>KuraSushi on vuonna 2024 perustettu japanilainen sushiravintola, jonka tavoitteena on luoda traditionaalinen itämainen makuelämys.
+                    Yrityksen takana toimii kahden perheen perustama perheyritys, joka sai alkunsa palavasta halusta tuoda Suomeen jotain aitoa omasta kulttuuristaan.
+                    Ravintolamme tarjoaa laajan valikoiman herkullisia makuja niin lihasta vegaanisiin vaihtoehtoihin, mutta myös traditionaalisiin japanilaisiin herkkuihin. 
+                    Ruokamme salaisuus löytyy laadukkaista, aina tuoreista raaka-aineista, jonka laadusta ei tingitä. Tervetuloa nauttimaan japanilaista kulttuuria Hämeenlinnan Vankanlähteeseen!</p>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg float-right" onclick="location.href='#varaa-poyta'">Tee varaus tästä</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- JAKOPALKKI -->
+        <div class="palkki">
+            <!-- tässä on oranssi palkki -->
+        </div>
+
+        <!-- ARVOSTELUT -->
+        <div class="container-review">
+            <div class="row">
+                <div class="col-md-4 bg-transparent">     
+                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero explicabo. </h6>
+                    <p> - Aake Asiakas </p>
+                </div>  
+                <div class="col-md-4 bg-transparent">
+                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero explicabo. </h6>
+                    <p> - Aake Asiakas </p>
+                </div>      
+                <div class="col-md-4 bg-transparent">          
+                    <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero explicabo. </h6>
+                    <p> - Aake Asiakas </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RUOKAKUVAT -->
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <img src="m1.png" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="col">
+                    <img src="m2.png" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="col">
+                    <img src="m3.png" class="img-fluid" alt="Image 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- PÖYDÄNVARAUS LOMAKE -->
+        <div class="container-fluid" id="varaa-poyta">
+        <h1>Varaa pöytä</h1>
+        <form action="/action_page.php">
+            <div class="form-container">
+                <div class="Etunimi">
+                    <label for="fname">Etunimi</label><br>
+                    <input type="text" id="fname" name="etunimi" placeholder="Maija">
+                </div>
+                <div class="Sukunimi">
+                    <label for="lname">Sukunimi</label><br>
+                    <input type="text" id="lname" name="sukunimi" placeholder="Meikäläinen">
+                </div>
+                <div class="Puh">
+                    <label for="puhelin">Puhelinnumero</label><br>
+                    <input type="text" id="puhelin" name="puhelin" placeholder="123 123 123 123">
+                </div>
+                <div class="Sposti">
+                    <label for="sposti">Sähköposti</label><br>
+                    <input type="text" id="sposti" name="sposti" placeholder="maija.meikäläinen@mail.com">
+                </div>
+                <div class="Päivä">
+                    <label for="date">Päivä</label><br>
+                    <input type="date" id="date" name="päivä">
+                </div>
+                <div class="Kello">
+                    <label for="kello">Kello</label><br>
+                    <select type="time" id="kello" name="aika" list="aika">
+                        <datalist id="aika">
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                        </datalist>
+                    </select>
+                </div>
+                <div class="Hlomaara">
+                    <label for="maara">Henkilömäärä</label><br>
+                    <select id="maara" name="maara" list="numero">
+                    <datalist id="numero">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </datalist>
+                    </select>
+                </div>
+                <div class="Erityistoiveet">
+                    <label for="erityistoiveet">Erityistoiveet</label><br>
+                    <textarea id="erityistoiveet" name="erityistoiveet" placeholder="Kirjoita erityistoiveet tähän" style="height: 100px;"></textarea>
+                </div>
+                <div class="Submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footerContainer">
+                <div class="footerNav">
+                    <ul> 
+                        <li> <a href="#"> Hinnasto </a></li>
+                        <li> — </li>
+                        <li> <a href="#varaa-poyta"> Varaus </a></li>
+                        <li> — </li>
+                        <li> <a href="#meista"> Meistä </a></li>
+                        <li> — </li>
+                        <li> <a href="#"> SWE </a></li>
+                    </ul>
+                    </div>
+                    <div class="footerBottom">
+                    <a href="#">
+                    <img src="img/logo.svg" width="120" height="80" alt="KuraSushi Logo">
+                    </a>
+                    <p> &copy; KuraSushi 2025 </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    </body>
+</html>
