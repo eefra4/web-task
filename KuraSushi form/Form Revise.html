@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KuraSushi Varauslomake</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <div class="container">
+            <div class="Etunimi">
+                <label for="fname">Etunimi</label><br>
+                <input type="text" id="fname" name="etunimi" placeholder="Etunimesi...">
+            </div>
+            <div class="Sukunimi">
+                <label for="lname">Sukunimi</label><br>
+                <input type="text" id="lname" name="sukunimi" placeholder="Sukunimesi...">
+            </div>
+            <div class="Puh">
+                <label for="puhelin">Puhelinnumero</label><br>
+                <input type="text" id="puhelin" name="puhelin" placeholder="123 123 123 123">
+            </div>
+            <div class="Sposti">
+                <label for="sposti">Sähköposti</label><br>
+                <input type="text" id="sposti" name="sposti" placeholder="maija.meikäläinen@mail.com">
+            </div>
+            <div class="Päivä">
+                <label for="date">Päivä</label><br>
+                <input type="date" id="date" name="päivä">
+            </div>
+            <div class="Kello">
+                <label for="kello">Kello</label><br>
+                <input type="time" id="kello" name="aika" list="aika">
+                <datalist id="aika">
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:30">10:30</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:30">13:30</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                </datalist>
+            </div>
+            <div class="Hlomaara">
+                <label for="maara">Henkilömäärä</label><br>
+                <select name="maara" id="maara">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+            </div>
+            <div class="Erityistoiveet">
+                <label for="erityistoiveet">Erityistoiveet</label><br>
+                <textarea id="erityistoiveet" name="erityistoiveet" placeholder="Kirjoita erityistoiveet tähän" style="height: 100px;"></textarea>
+            </div>
+            <div class="Submit">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
