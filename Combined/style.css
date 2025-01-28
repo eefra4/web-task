@@ -18,7 +18,7 @@ h2 {
 } 
 p {
     color: #FAFAFA;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .row {
     margin-left: -5px;
@@ -37,16 +37,19 @@ p {
 .container-fluid {
     max-width: 900px;
     background-color: none;
+    /* padding-bottom: 20px; */
 }
 
 .btn-primary {
     color: #FAFAFA;
     background-color: #D0680C;
+    border-color: #D0680C;
 }
 
 .btn-primary:hover {
     color: #FAFAFA;
     background-color: #f4943f;
+    border-color: #f4943f;
 }
 
 
@@ -73,16 +76,13 @@ p {
    font-size: large;
 }
 .nav-link {
-    color: #FAFAFA;
-    
+    color: #FAFAFA;  
 }
 .nav-link:hover {
     color: #D0680C;
-
 }
 .navbar-brand {
     color: #FAFAFA;
-
 }
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -184,7 +184,7 @@ footer {
   
   .Erityistoiveet { grid-area: Erityistoiveet; }
   
-  .Submit { grid-area: Submit; }
+  .Submit { grid-area: Submit; padding-bottom: 20px; }
 
   input[type=text], email, textarea {
     width: 100%;
