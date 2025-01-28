@@ -168,6 +168,21 @@ footer {
       "Submit Submit Submit Submit Submit Submit";
   }
   
+  @media (max-width: 600px) {
+    .form-container {
+      grid-template-columns: 1fr 1fr; /* Single column layout */
+      grid-template-areas:
+        "Etunimi Etunimi"
+        "Sukunimi Sukunimi"
+        "Puh Puh"
+        "Sposti Sposti"
+        "Päivä Kello"
+        "Hlomaara Hlomaara"
+        "Erityistoiveet Erityistoiveet"
+        "Submit Submit";
+    }
+  }
+
   .Etunimi { grid-area: Etunimi; }
   
   .Sukunimi { grid-area: Sukunimi; }
