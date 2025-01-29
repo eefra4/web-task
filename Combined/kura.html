@@ -14,38 +14,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
         <title>KuraSushi - Aasialainen ravintola</title>
     </head>
-  
+
     <body>
-        
-        <!-- NAVBAR -->
-        <!-- <nav class="navbar navbar-expand-lg bg-transparent fixed-top"> -->
-        <nav class="navbar navbar-expand-lg bg-transparent">
-            <div class="container px-4">
-                <!-- KuraSushi Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.svg" width="100" height="100" alt="KuraSushi Logo">
-                </a>
-                <!-- Navbar nappi -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#varaa-poyta"> Varaus </a>
-                        <a class="nav-link" href="#hinnasto"> Hinnasto </a>
-                        <a class="nav-link" href="#meista"> Meistä </a>
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                        <!-- Kielen vaihto -->
-                        <a href="#">
-                            <img src="img/sve.png" width="35" height="35" alt="På svenska">
-                        </a>
+        <!-- HERO IMAGE JA NAVI -->
+        <div class="hero-image">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container px-4">
+                    <!-- KuraSushi Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.svg" width="100" height="100" alt="KuraSushi Logo">
+                    </a>
+                    <!-- Navbar nappi -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="#meista"> Meistä </a>
+                            <a class="nav-link" href="#hinnasto"> Hinnasto </a>
+                            <a class="nav-link active" aria-current="page" href="#varaus"> Varaus </a>
+                            <a class="nav-link disabled" href="#" tabindex="-1"></a>
+                            <!-- Kielen vaihto -->
+                            <a href="#">
+                                <img src="img/sve.png" width="35" height="35" alt="På svenska">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
-        <!-- HERO IMAGE -->
-        <div class="hero-image">
+            </nav>
         </div>
         
         <!-- MEISTÄ(ABOUT) -->
@@ -59,7 +55,7 @@
                     Ruokamme salaisuus löytyy laadukkaista, aina tuoreista raaka-aineista, jonka laadusta ei tingitä. Tervetuloa nauttimaan japanilaista kulttuuria Hämeenlinnan Vankanlähteeseen!</p>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-primary btn-lg float-right" onclick="location.href='#varaa-poyta'">Tee varaus tästä</button>
+                    <button type="button" class="btn btn-primary btn-lg float-right" onclick="location.href='#varaus'">Tee varaus tästä</button>
                 </div>
             </div>
         </div>
@@ -90,32 +86,42 @@
         <!-- RUOKAKUVAT -->
         <div class="container py-4">
             <div class="row">
-                <div class="col">
+                <div class="col-md py-2">
                     <img src="m1.png" class="img-fluid" alt="Image 1">
                 </div>
-                <div class="col">
+                <div class="col-md py-2">
                     <img src="m2.png" class="img-fluid" alt="Image 2">
                 </div>
-                <div class="col">
+                <div class="col-md py-2">
                     <img src="m3.png" class="img-fluid" alt="Image 3">
                 </div>
             </div>
         </div>
 
         <!-- HINNASTO -->
-        <div class="hinnasto" id="hinnasto">
+        <!-- <div class="hinnasto" id="hinnasto">
             <h2> Hinnasto </h2>
             <br>
             <img src="menu.png" class="img-fluid" alt="KuraSushi hinnasto">
-          </div>
-     
+          </div> -->
+        <div class="hinnasto row justify-content-center py-4">
+            <div class="col-md-4 py-2">
+                <img src="hinnasto1.png" alt="hinnasto1">
+            </div>
+            <div class="col-md-4 py-2">
+                <img src="hinnasto2.png" alt="hinnasto2">
+            </div>
+        </div>
+
+
+
         <!-- JAKOPALKKI -->
         <div class="palkki">
             <!-- tässä on oranssi palkki -->
         </div>
 
         <!-- PÖYDÄNVARAUS LOMAKE -->
-        <div class="container px-4" id="varaa-poyta">
+        <div class="container px-4" id="varaus">
         <h2>Varaa pöytä</h2>
         <form action="/action_page.php">
             <div class="form-container">
@@ -141,8 +147,7 @@
                 </div>
                 <div class="Kello">
                     <label for="kello">Kello</label><br>
-                    <select type="time" id="kello" name="aika" list="aika">
-                        <datalist id="aika">
+                    <select id="kello" name="aika">
                             <option value="08:00">08:00</option>
                             <option value="08:30">08:30</option>
                             <option value="09:00">09:00</option>
@@ -168,21 +173,17 @@
                             <option value="19:00">19:00</option>
                             <option value="19:30">19:30</option>
                             <option value="20:00">20:00</option>
-                            <option value="20:30">20:30</option>
-                        </datalist>
                     </select>
                 </div>
                 <div class="Hlomaara">
                     <label for="maara">Henkilömäärä</label><br>
-                    <select id="maara" name="maara" list="numero">
-                    <datalist id="numero">
+                    <select id="maara" name="maara">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
-                    </datalist>
                     </select>
                 </div>
                 <div class="Erityistoiveet">
@@ -207,7 +208,7 @@
                 </div>
                 <div class="col">
                     <div class="p-6">
-                        <img src="image6.png" class="img-fluid" alt="karttakuva">
+                        <a href="https://www.google.com/maps/place/Hämeen+ammattikorkeakoulu+(HAMK),+Hämeenlinnan+korkeakoulukeskus/@60.9763314,24.4757657,17z/data=!4m6!3m5!1s0x468e5d7f1a184209:0xe69734d5c10042bd!8m2!3d60.9763288!4d24.4783406!16s%2Fm%2F0h3swz5?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D"><img src="image6.png" class="img-fluid" alt="karttakuva"></a>
                     </div>
                 </div>
             </div>    
@@ -215,29 +216,38 @@
         </div>
 
 
-        
-        <!-- FOOTER -->
-        <footer>
-            <div class="footerContainer">
-                <div class="footerNav">
-                    <ul> 
-                        <li> <a href="#hinnasto"> Hinnasto </a></li>
-                        <li> — </li>
-                        <li> <a href="#varaa-poyta"> Varaus </a></li>
-                        <li> — </li>
-                        <li> <a href="#meista"> Meistä </a></li>
-                        <li> — </li>
-                        <li> <a href="#"> SWE </a></li>
-                    </ul>
+
+
+        <footer class="py-2">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                    <!-- Logo vasemalla -->
+                    <div class="mb-2 mb-sm-0">
+                        <img src="img/logo.svg" alt="Logo" height="100" width="100">
+                        <p>&copy; Kurasushi &trade;</p>
                     </div>
-                    <div class="footerBottom">
-                    <a href="#">
-                    <img src="img/logo.svg" width="120" height="80" alt="KuraSushi Logo">
-                    </a>
-                    <p> &copy; KuraSushi 2025 </p>
+        
+                    <!-- LINKIT -->
+                    <ul class="list-unstyled d-flex mb-0 flex-wrap justify-content-center">
+                        <li class="ms-3"><a href="#meista" class="text-white text-decoration-none">Meistä</a></li>
+                        <li class="ms-3"><a href="#hinnasto" class="text-white text-decoration-none">Hinnasto</a></li>
+                        <li class="ms-3"><a href="#varaus" class="text-white text-decoration-none">Varaus</a></li>
+                        <li class="ms-3"><a href="#swe" class="text-white text-decoration-none">SE</a></li>
+                    </ul>
+        
+                    <!-- SOMEKUVAT -->
+                    <div class="d-flex justify-content-between align-items-center py-4">
+                        <a href="http://facebook.com"><img src="img/fb.png" height="30" width="30" class="ms-2" alt="facebook-logo"></a>
+                        <a href="http://instagram.com"><img src="img/ig.png" height="30" width="30" class="ms-2" alt="instagram-logo"></a>
+                    </div>
                 </div>
             </div>
         </footer>
+
+
+
+
+
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
     </body>

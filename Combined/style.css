@@ -9,7 +9,7 @@ body, html {
 }
 h1 {
     color: #E6C197;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 h2 {
     color: #E6C197;
@@ -18,7 +18,7 @@ h2 {
 } 
 p {
     color: #FAFAFA;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .row {
     margin-left: -5px;
@@ -44,6 +44,7 @@ p {
     color: #FAFAFA;
     background-color: #D0680C;
     border-color: #D0680C;
+    border-radius: 0%;
 }
 
 .btn-primary:hover {
@@ -54,10 +55,10 @@ p {
 
 
 .hinnasto {
-    margin-top: 25px;    
+    /* margin-top: 25px;     */
     /* margin-bottom: 25px; */
-    padding-top: 10px;
-    padding-bottom: 50px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 50px; */
     text-align: center;
     background-color: #312A21;
 } 
@@ -74,6 +75,7 @@ p {
    text-align: right;
    margin-top: 15px;
    font-size: large;
+   text-shadow: 2px 2px 5px #000000;
 }
 .nav-link {
     color: #FAFAFA;  
@@ -89,7 +91,9 @@ p {
 
 }
   
-
+.navbar-toggler{
+    background-color: #D0680C;
+} 
 
 footer {
     /* max-width: 900px;
@@ -97,11 +101,13 @@ footer {
     
     color: #FAFAFA;
     background-color: #312A21;
+    width: 100%;
+    padding: 10px;
 }
 
 .footerContainer {
     width: 100%;
-    padding: 50px;
+    padding: 10px;
     font-family: Arima;
     height: auto;
 }
@@ -199,7 +205,7 @@ footer {
   
   .Erityistoiveet { grid-area: Erityistoiveet; }
   
-  .Submit { grid-area: Submit; padding-bottom: 20px; }
+  .Submit { grid-area: Submit; padding-bottom: 20px; border-radius: 0%;}
 
   input[type=text], email, textarea {
     width: 100%;
@@ -241,9 +247,10 @@ footer {
   color: #fafafa;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #f4943f;
-}
+ }
+ 
+ input[type=submit]:hover {
+ background-color: #f4943f;
+ }
