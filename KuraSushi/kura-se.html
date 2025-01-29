@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
-        <title>KuraSushi - Aasialainen ravintola</title>
+        <title>KuraSushi - Asiatisk restaurang</title>
     </head>
 
     <body>
@@ -30,13 +30,13 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link" href="#meista"> Meistä </a>
-                            <a class="nav-link" href="#hinnasto"> Hinnasto </a>
-                            <a class="nav-link active" aria-current="page" href="#varaus"> Varaus </a>
+                            <a class="nav-link" href="#meista"> Om oss </a>
+                            <a class="nav-link" href="#hinnasto"> Prislist </a>
+                            <a class="nav-link active" aria-current="page" href="#varaus"> Boka </a>
                             <a class="nav-link disabled" href="#" tabindex="-1"></a>
                             <!-- Kielen vaihto -->
-                            <a href="kura-se.html">
-                                <img src="img/sve.png" width="35" height="35" alt="På svenska">
+                            <a href="kura.html">
+                                <img src="img/fi.png" width="35" height="35" alt="Suomeksi">
                             </a>
                         </div>
                     </div>
@@ -48,14 +48,15 @@
         <div class="container py-4" id="meista">
             <div class="row gx-5">
                 <div class="col-md-7">
-                    <h1>Meistä</h1>
-                    <p>KuraSushi on vuonna 2024 perustettu japanilainen sushiravintola, jonka tavoitteena on luoda traditionaalinen itämainen makuelämys.
-                    Yrityksen takana toimii kahden perheen perustama perheyritys, joka sai alkunsa palavasta halusta tuoda Suomeen jotain aitoa omasta kulttuuristaan.
-                    Ravintolamme tarjoaa laajan valikoiman herkullisia makuja niin lihasta vegaanisiin vaihtoehtoihin, mutta myös traditionaalisiin japanilaisiin herkkuihin. 
-                    Ruokamme salaisuus löytyy laadukkaista, aina tuoreista raaka-aineista, jonka laadusta ei tingitä. Tervetuloa nauttimaan japanilaista kulttuuria Hämeenlinnan Vankanlähteeseen!</p>
+                    <h1>Om oss</h1>
+                    <p>KuraSushi är en japanskt sushikedja som vill erbuda en tradiotionel orientalisk smak upplevelse. 
+                        Bakom foretaget är ett familjeföretag grundad av två familjer som hade en brännande önska att införa någonting äkta av sin kultur till Finland. 
+                        Vår restaurang erbjuder ett bret  sortiment av läkra smaker som kött och veganska alternativ men också tradiotionella japanska delikatesser. 
+                        Bakom hemligheten hittas högklassiga och alltid färska råvaror av bästa kvalitet. 
+                        Välkommen att njuta av japansk kultur i Vankalähde Tavastehus.</p>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-primary btn-lg float-right" onclick="location.href='#varaus'">Tee varaus tästä</button>
+                    <button type="button" class="btn btn-primary btn-lg float-right" onclick="location.href='#varaus'">Boka här</button>
                 </div>
             </div>
         </div>
@@ -101,10 +102,10 @@
         <!-- HINNASTO -->
         <div class="hinnasto row justify-content-center py-4">
             <div class="col-md-4 py-2">
-                <img src="img/hinnasto1.png" alt="hinnasto1">
+                <img src="img/hinnasto1-se.png" alt="hinnasto1">
             </div>
             <div class="col-md-4 py-2">
-                <img src="img/hinnasto2.png" alt="hinnasto2">
+                <img src="img/hinnasto2-se.png" alt="hinnasto2">
             </div>
         </div>
 
@@ -115,31 +116,31 @@
 
         <!-- PÖYDÄNVARAUS LOMAKE -->
         <div class="container px-4" id="varaus">
-            <h2>Varaa pöytä</h2>
+            <h2>Boka bord</h2>
             <form action="/action_page.php">
                 <div class="form-container">
                     <div class="Etunimi">
-                        <label for="fname">Etunimi</label><br>
+                        <label for="fname">Förnamn</label><br>
                         <input type="text" id="fname" name="etunimi" placeholder="Maija">
                     </div>
                     <div class="Sukunimi">
-                        <label for="lname">Sukunimi</label><br>
+                        <label for="lname">Efternamn</label><br>
                         <input type="text" id="lname" name="sukunimi" placeholder="Meikäläinen">
                     </div>
                     <div class="Puh">
-                        <label for="puhelin">Puhelinnumero</label><br>
+                        <label for="puhelin">Telefonnummer</label><br>
                         <input type="text" id="puhelin" name="puhelin" placeholder="123 123 123 123">
                     </div>
                     <div class="Sposti">
-                        <label for="sposti">Sähköposti</label><br>
+                        <label for="sposti">E-post</label><br>
                         <input type="text" id="sposti" name="sposti" placeholder="maija.meikäläinen@mail.com">
                     </div>
                     <div class="Päivä">
-                        <label for="date">Päivä</label><br>
+                        <label for="date">Dag</label><br>
                         <input type="date" id="date" name="päivä">
                     </div>
                     <div class="Kello">
-                        <label for="kello">Kello</label><br>
+                        <label for="kello">Tid</label><br>
                         <select id="kello" name="aika">
                             <option value="08:00">08:00</option>
                             <option value="08:30">08:30</option>
@@ -169,7 +170,7 @@
                         </select>
                     </div>
                     <div class="Hlomaara">
-                        <label for="maara">Henkilömäärä</label><br>
+                        <label for="maara">Antal personer</label><br>
                         <select id="maara" name="maara">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -180,8 +181,8 @@
                         </select>
                     </div>
                     <div class="Erityistoiveet">
-                        <label for="erityistoiveet">Erityistoiveet</label><br>
-                        <textarea id="erityistoiveet" name="erityistoiveet" placeholder="Kirjoita erityistoiveet tähän" style="height: 100px;"></textarea>
+                        <label for="erityistoiveet">Särskilda önskemål</label><br>
+                        <textarea id="erityistoiveet" name="erityistoiveet" placeholder="Skriv in särskilda önskemål här" style="height: 100px;"></textarea>
                     </div>
                     <div class="Submit">
                         <input type="submit" value="Submit">
@@ -194,11 +195,11 @@
                 <div class="row">
                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                         <div class="p-6">
-                            <h4>Ota yhteyttä:</h4>
-                            <p>email: kurasushi@gmail.com</p>
-                            <p>puh: 050 155 155 155</p>
+                            <h4>Kontakta oss:</h4>
+                            <p>e-post: kurasushi@gmail.com</p>
+                            <p>tel: 050 155 155 155</p>
                             <p>Vankanlähde 11</p>
-                            <p>13100 Hämeenlinna</p>
+                            <p>13100 Tavastehus</p>
                         </div>
                     </div>
                     <div class="col">
@@ -221,10 +222,11 @@
         
                     <!-- LINKIT -->
                     <ul class="list-unstyled d-flex mb-0 flex-wrap justify-content-center">
-                        <li class="ms-3"><a href="#meista" class="text-white text-decoration-none">Meistä</a></li>
-                        <li class="ms-3"><a href="#hinnasto" class="text-white text-decoration-none">Hinnasto</a></li>
-                        <li class="ms-3"><a href="#varaus" class="text-white text-decoration-none">Varaus</a></li>
-                        <li class="ms-3"><a href="kura-se.html" class="text-white text-decoration-none">SE</a></li>
+                        <li class="ms-3"><a href="#meista" class="text-white text-decoration-none">Om oss</a></li>
+                        <li class="ms-3"><a href="#hinnasto" class="text-white text-decoration-none">Prislist</a></li>
+                        <li class="ms-3"><a href="#varaus" class="text-white text-decoration-none">Boka</a></li>
+                        <li class="ms-3"><a href="kura.html" class="text-white text-decoration-none">FI</a></li>
+                        
                     </ul>
         
                     <!-- SOMEKUVAT -->
